@@ -96,7 +96,7 @@ public final class SSLContextBuilder {
 
     private TrustManager trustManager;
     private KeyManager keyManager;
-    private String protocol = PROTOCOL_TLS1;
+    private String protocol = PROTOCOL_TLS;
     private SecureRandom random;
 
     /** These are mutually exclusive. */
@@ -159,12 +159,12 @@ public final class SSLContextBuilder {
     }
 
     /**
-     * Sets the protocol which the SSL context should use. By default, TLSv1
+     * Sets the protocol which the SSL context should use. By default, TLS
      * will be used.
      *
      * @param protocol
      *            The protocol which the SSL context should use, which may be
-     *            {@code null} indicating that TLSv1 will be used.
+     *            {@code null} indicating that TLS will be used.
      * @return This SSL context builder.
      */
     public SSLContextBuilder setProtocol(final String protocol) {
